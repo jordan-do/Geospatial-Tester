@@ -178,7 +178,7 @@ class HelloGeoRenderer(val activity: HelloGeoActivity) :
     // TODO: Obtain Geospatial information and display it on the map.
     val earth = session.earth
     if (earth?.trackingState == TrackingState.TRACKING) {
-      // TODO: the Earth object may be used here.
+      // TODO: use Earth object.
       val cameraGeospatialPose = earth.cameraGeospatialPose
       activity.view.mapView?.updateMapPosition(
               latitude = cameraGeospatialPose.latitude,
